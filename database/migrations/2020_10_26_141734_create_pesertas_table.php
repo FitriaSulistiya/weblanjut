@@ -25,8 +25,8 @@ class CreatePesertasTable extends Migration
             $table->date('tanggallahir')->nullable();
             $table->timestamps();
 // Jadikan berikan FK (Foreign Key)
-            $table->foreign('jurusan_id')
-                  ->references('id')->on('jurusan')->onDelete('cascade');
+            $table->foreign('peserta_id')
+                  ->references('id')->on('peserta')->onDelete('cascade');
         });
     }
 
